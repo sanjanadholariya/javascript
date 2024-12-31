@@ -1,0 +1,48 @@
+
+<!-- 4.Write a JavaScript program to find which number is grater in 4 numbers using ladder if else. -->
+
+<script type="text/javascript">
+
+  var a = parseInt(prompt("Enter The value of a :-"))
+  var b = parseInt(prompt("Enter The value of b :-"))
+  var c = parseInt(prompt("Enter The value of c :-"))
+  var d = parseInt(prompt("Enter The value of d :-"))
+
+  if(a>b){
+      if(a>c){
+          if(a>d){
+              document.write(`<h1>A = ${a} is grater.</h1>`)
+          }
+          else{
+              document.write(`<h1>D= ${d} is grater.</h1>`)
+          }
+      }
+      else{
+          if(c>d){
+              document.write(`<h1>C= ${c} is grater.</h1>`)
+            }
+          else{
+            document.write(`<h1>D= ${d} is grater.</h1>`)
+          }
+      }
+  }
+  else {
+    if(b>c){
+        if(b>d){
+            document.write(`<h1>B= ${b} is grater.</h1>`)
+        }
+        else{
+            document.write(`<h1>D = ${d} is grater.</h1>`)
+        }
+    }
+    else{
+        if(c>d){
+            document.write(`<h1>C = ${c} is grater.</h1>`)
+        }
+        else{
+            document.write(`<h1>D = ${d} is grater.</h1>`)
+        }
+    }
+
+  }
+</script>
