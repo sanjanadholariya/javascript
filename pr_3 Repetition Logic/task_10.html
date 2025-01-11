@@ -1,0 +1,18 @@
+<!-- 10.Write javascript program to calculate factorial of a number using while loop.
+ -->
+
+
+<script type="text/javascript">
+
+    let n = parseInt(prompt("Enter the number of the factorial :- "));
+    let fact = 1;
+    let tamp = n;
+
+    while(n>=1){
+        fact *= n;
+        n--;
+    }
+
+    document.write(`<h1>The factorial of the ${tamp} is ${fact}</h1>`)
+
+</script>
