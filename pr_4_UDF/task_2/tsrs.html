@@ -1,0 +1,94 @@
+<!-- 2. Write a JavaScript program to find max of 5 number using nested if. -->
+
+<script type="text/javascript">
+
+    // TSRS
+
+    const max = (a,b,c,d) =>{
+
+        if(a>b){
+            if(a>c){
+                if(a>d){
+                    if(a>e){
+                        return `A ${a} is max...!` 
+                    }else{
+                        return `E ${e} is max...!` 
+                    }
+                }
+                else{
+                    if(d>e){
+                        return `E ${e} is max...!` 
+                    }
+                    else{
+                        return `E ${e} is max...!` 
+                    }
+                }
+            }else{
+                if(c>d){
+                    if(c>e){
+                        return `C ${c} is max...!` 
+                    }
+                    else{
+                        return `E ${e} is max...!` 
+                    }
+                }
+                else{
+                    if(d>e){
+                        return `E ${e} is max...!` 
+                    }
+                    else{
+                        return `E ${e} is max...!` 
+                    }
+                }
+            }
+        }else{
+            if(b>c){
+                if(b>d){
+                    if(b>e){
+                        return `B ${b} is max...!` 
+                    }
+                    else{
+                        return `E ${e} is max...!` 
+                    }
+                }
+                else{
+                    if(d>e){
+                        return `E ${e} is max...!` 
+                    }
+                    else{
+                        return `E ${e} is max...!` 
+                    }
+                }
+            }
+            else{
+                if(c>d){
+                    if(c>e){
+                        return `C ${c} is max...!` 
+                    }
+                }
+                else{
+                    if(d>e){
+                        return `E ${e} is max...!` 
+                    }
+                    else{
+                        return `E ${e} is max...!` 
+                    }
+                }
+            }
+        }
+
+    }
+
+    let a = parseInt(prompt("Enter a :- "));
+    let b = parseInt(prompt("Enter b :- "));
+    let c = parseInt(prompt("Enter c :- "));
+    let d = parseInt(prompt("Enter d :- "));
+    let e = parseInt(prompt("Enter e :- "));
+
+    document.write(`<h1>${max(a,b,c,d)}</h1>`)
+
+    
+
+
+    
+</script>

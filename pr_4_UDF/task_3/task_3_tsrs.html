@@ -1,0 +1,48 @@
+<!-- 3.Write a JavaScript program to find which number is grater in 4 numbers using nested if else. (using simple function) -->
+
+<script type="text/JavaScript">
+
+    // TSRS
+
+    const grater = (a,b,c,d) =>{
+        if(a>b){
+            if(a>c){
+                if(a>d){
+                    return "A is grater...!";
+                }
+                else{
+                    return "d is grater...!";
+                }
+            }
+            else{
+                if(c>d){
+                    return "c is grater...!";
+                }
+                else{
+                    return "d is grater...!";
+                }
+            }
+        }
+        else{
+            if(b>c){
+                if(b>d){
+                    return "b is grater...!";
+                }
+                else{
+                    return "d is grater...!";
+                }
+            }
+            else{
+                if(c>d){
+                    return "c is grater...!";
+                }
+                else{
+                    return "d is grater...!";
+                }
+            }
+
+        }
+    }
+    
+    document.write(`<h1>${grater(10,20,30,40)}</h1>`);
+</script>

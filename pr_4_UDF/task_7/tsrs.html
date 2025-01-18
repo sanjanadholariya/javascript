@@ -1,0 +1,37 @@
+<!-- 7.Write a JavaScript program to find which number is grater in 3 numbers using nested if else.(using all function) -->
+
+<script type="text/javascript">
+
+    // TSRS
+
+    const grate = (a,b,c) =>{
+
+        if(a>b){
+            if(a>c){
+                return "A is grater...!"
+            }
+            else{
+                return "C is grater...!"
+            }
+        }
+        else{
+            if(b>c){
+                return "B is grater...!"
+            }
+            else{
+                return "C is grater...!"
+            }
+            
+        }
+
+    }
+
+    var a = parseInt(prompt("Enter the value of a :- "));
+    var b = parseInt(prompt("Enter the value of b :- "));
+    var c = parseInt(prompt("Enter the value of c :- "));
+
+    document.write(`<h1>${grate(a,b,c)}</h1>`)
+
+
+    
+</script>

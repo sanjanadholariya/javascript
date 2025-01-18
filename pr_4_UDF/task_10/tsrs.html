@@ -1,0 +1,25 @@
+<!-- 10.Write a JavaScript program to decide that you eligible for voting? (using all function) -->
+
+<script type="text/javascript">
+
+    // TSRS
+
+    const vote = (age) =>{
+
+        if(age >= 18){
+            return `You can vote...`;
+        }
+        else{
+            return `You can not vote...`;
+        }
+
+    }
+
+    let age = parseInt(prompt("Enter age :- "));
+
+    document.write(`<h1>${vote(age)}</h1>`)
+    
+
+
+    
+</script>

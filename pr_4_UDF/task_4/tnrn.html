@@ -1,0 +1,30 @@
+<!-- 4.Write a JavaScript program to find which number is greter in 4 numbers using ledder if else. (using no return with parameter function) -->
+
+<script type="text/JavaScript">
+
+    // TNRN
+
+    const grater = () => {
+        let a = parseInt(prompt("Enter a :- "));
+        let b = parseInt(prompt("Enter b :- "));
+        let c = parseInt(prompt("Enter c :- "));
+        let d = parseInt(prompt("Enter d :- "));
+
+        if(a>b && a>c && a>d){
+            document.write(`<h1>${a} is grater..! </h1>`);
+        }
+        else if(b>a && b>c && b>d){
+            document.write(`<h1>${b} is grater..!</h1>`);
+        }
+        else if(c>a && c>b && c>d){
+            document.write(`<h1>${c} is grater..!</h1>`);
+        }
+        else{
+            document.write(`<h1>${d} is grater..!</h1>`)
+        }
+
+    }
+
+    grater();
+
+</script>

@@ -1,0 +1,24 @@
+<!-- 5.Write Write a JavaScript program to add two number of addition, subtraction, multiplication, division (using simple function) -->
+
+<script>
+
+    // TSRS
+
+    const calc = (a,b) =>{
+
+    let ans = 
+              ` <h1>${a} + ${b} = ${a+b}</h1>
+                <h1>${a} - ${b} = ${a-b}</h1>
+                <h1>${a} * ${b} = ${a*b}</h1>
+                <h1>${a} / ${b} = ${a/b}</h1>`
+
+    return ans;
+       
+    }
+
+    var a = parseInt(prompt("Enter a :- "));
+    var b = parseInt(prompt("Enter b :- "));
+
+    document.write(`<h1>${calc(a,b)}</h1>`)
+
+</script>
