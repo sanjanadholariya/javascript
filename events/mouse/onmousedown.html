@@ -1,0 +1,52 @@
+<div align="center">
+  <button id="btn1" onmousedown="visible()">Show</button>
+  <button id="btn2" onmousedown="inVisible()" style="display: none;">Hide</button>
+  <div id="box"></div>
+</div>
+
+<script type="text/javascript">
+  const visible = () => {
+    let box = document.getElementById(`box`);
+
+    box.style.display = "block";
+    box.style.width = "100px";
+    box.style.height = "100px";
+    box.style.background = "teal";
+
+    let btn1 = document.getElementById(`btn1`);
+    btn1.style.display = "none";
+
+    let btn2 = document.getElementById(`btn2`);
+    btn2.style.display = "block";
+  };
+
+  const inVisible = () => {
+    let box = document.getElementById(`box`);
+    box.style.display = "none";
+
+    let btn1 = document.getElementById(`btn1`);
+    btn1.style.display = "block";
+
+    let btn2 = document.getElementById(`btn2`);
+    btn2.style.display = "none";
+  };
+</script>
+
+<!-- 
+    <button onmousedown="func()">show</button>
+
+    <div id="box"></div>
+
+
+
+<script type="text/javascript">
+
+    const func = () =>{        
+        let box = document.getElementById(`box`);
+
+        box.style.width="100px";
+        box.style.height="100px";
+        box.style.background="teal";
+    }
+
+</script> -->

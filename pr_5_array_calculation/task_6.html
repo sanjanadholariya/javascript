@@ -1,0 +1,41 @@
+<!-- 6. delete element in array position wise. -->
+
+<div>
+    <table >
+        <tr>
+            <td>Enter index No.:-</td>
+            <td><input type="number" id="indexNo"></td>
+        </tr>
+        <tr>
+            <td>Enter how many element you want to delete :-</td>
+            <td><input type="number" id="arrVal"></td>
+            
+        </tr>
+        <tr>
+            <td><button onclick="newArr()">Get new array</button></td>
+        </tr>
+        
+        
+    </table>
+</div>
+
+<script type="text/javascript">
+
+let arr = [1,2,3,4,5,6];
+
+document.write(`<h1>${arr}</h1>`);
+
+const newArr = () => {
+    let indexNo =  document.getElementById(`indexNo`).value;
+    let arrVal =  document.getElementById(`arrVal`).value;
+
+    let ans = arr.splice(indexNo, arrVal);
+
+    document.write(`<h1>${arr}</h1>`);
+    console.log(arr);
+    
+
+}
+
+
+</script>

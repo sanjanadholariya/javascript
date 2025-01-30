@@ -1,0 +1,20 @@
+<!-- 4. find duplicate element in array -->
+
+<script type="text/javascript">
+  let arr = [76, 45, 45, 45, 23, -74, 76, 76,-74, 45, -74];
+
+  let seenarr = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if(seenarr[i]==1){
+        continue;
+    }
+
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[i] == arr[j]) {
+        console.log(arr[i]);
+        seenarr[j] = 1;
+      }
+    }
+  }
+</script>

@@ -1,0 +1,38 @@
+<!-- 9. search array element using for loop. -->
+
+<table>
+    <tr>
+        <td>Enter element :- </td>
+        <td><input type="text" id="Element"></td>
+    </tr>
+    <tr>
+        <td><button id="indexNo" onclick="findIndex()">Find Index</button></td>
+        <!-- <td><input type="text" id="ans"></td> -->
+    </tr>
+</table>
+
+<!-- <h1 id="ans"></h1> -->
+
+<script type="text/javascript">
+
+let arr = [1,2,3,4,5,6,7,8,9,10];
+
+document.write(`<h1>${arr}</h1>`)
+
+const findIndex = () => {
+
+    let Element = document.getElementById(`Element`).value;
+
+    for(let i = 0; i<arr.length; i++){
+        if(arr[i]==Element){
+            console.log(`${arr[i]} at index of ${i}`);
+            
+        }
+        
+    }
+    
+
+    
+
+}
+</script>

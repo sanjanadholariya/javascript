@@ -1,0 +1,17 @@
+<!-- 4. find duplicate element in array -->
+
+<script type="text/javascript">
+    let arr = [76, 45, 45, 45, 23, -74, 76, 76,-74, 45, -74];
+  
+    let newarr = [];
+
+    for(let i = 0; i<arr.length; i++){
+        if(!newarr.includes(arr[i])){
+            newarr.push(arr[i]);
+        }
+    }
+
+    console.log(newarr);
+    
+  </script>
+  

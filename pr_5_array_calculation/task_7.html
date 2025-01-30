@@ -1,0 +1,46 @@
+<!-- 7. update element in array. -->
+
+
+<div>
+    <table >
+        <tr>
+            <td>Enter start index No.:-</td>
+            <td><input type="number" id="indexNo"></td>
+        </tr>
+        <tr>
+            <td>Enter how many element you want to delete :-</td>
+            <td><input type="number" id="arrVal"></td>     
+        </tr>
+        <tr>
+            <td>Enter those Element which you want to add:-</td>
+            <td><input type="text" id="newAdd"></td>
+        </tr>
+        <tr>
+            <td><button onclick="newArr()">Get new array</button></td>
+        </tr>
+        
+        
+    </table>
+</div>
+
+<script type="text/javascript">
+
+let arr = [1,2,3,4,5,6];
+
+document.write(`<h1>${arr}</h1>`);
+
+const newArr = () => {
+    let indexNo =  document.getElementById(`indexNo`).value;
+    let arrVal =  document.getElementById(`arrVal`).value;
+    let newAdd = document.getElementById(`newAdd`).value;
+
+    let ans = arr.splice(indexNo, arrVal,newAdd);
+
+    document.write(`<h1>${arr}</h1>`);
+    // console.log(arr);
+    
+
+}
+
+
+</script>
