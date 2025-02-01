@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1 align="center">Employee Data</h1>
+    <table  align="center" cellpadding="5">
+        <tr>
+            <td><label for="">City :- </label></td>
+            <td><input type="text" id="searchCity" placeholder="Enter city"></td>
+            <td><input type="button" value="Search" onclick="findansCity()"></td>
+
+            
+        </tr>
+        <tr>
+            <td><label for="">Designation :- </label></td>
+            <td><input type="text" id="searchDesignation" placeholder="Enter Designation"></td>
+            <td><input type="button" value="Search" onclick="findansDesignation()"></td>
+
+            <!-- <td>
+                <select name="" id="searchDesignation" onchange="findansDesignation()">
+                    <option value="">----Designation----</option>
+                    <option value="">senior</option>
+                    <option value="">junior</option>
+                    <option value="">manager</option>
+                    <option value="">developer</option>
+                    <option value="">team lead</option>
+                </select>
+            </td> -->
+        </tr>
+        <tr>
+            <td><label for="">Gender :- </label></td>
+            <td><input type="text" id="searchGender" placeholder="Enter Gender"></td>
+            <td><input type="button" value="Search" onclick="findansGender()"></td>
+
+            <!-- <td>
+                <select name="Gender" id="searchGender"  onchange="findansGender()" >
+                    <option value="">----Gender----</option>
+                    <option value="">male</option>
+                    <option value="">female</option>
+                </select>
+            </td> -->            
+        </tr>
+
+        <tr>
+            <td><label for="">Salary :- </label></td>
+            <td><input type="text" id="startSalary" placeholder="Enter start Salary"></td>
+            <td><input type="text" id="endSalary" placeholder="Enter end Salary"></td>
+            <td><input type="button" value="Search" onclick="findansSalary()"></td>
+        </tr>
+
+        <tr  width="100%">
+            <td><input type="button" value="Reset" onclick="allRecord()"></td>
+        </tr>
+    </table>
+    <br>
+    <table border="1" align="center" cellpadding="10" cellspacing="3">
+        <thead>
+            <th>GRID</th>
+            <th>NAME</th>
+            <th>SURNAME</th>
+            <th>CITY</th>
+            <th>DESIGNATION</th>
+            <th>SALARY</th>
+            <th>EXPERIENCE</th>
+            <th>GENDER</th>
+        </thead>
+        <tbody id="tableData">
+
+        </tbody>
+    </table>
+
+    <script type="text/javascript" src="./data.js">
+
+    </script>
+
+</body>
+</html>
