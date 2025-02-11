@@ -270,17 +270,16 @@ const allRecord = () => {
 
 allRecord();
 
-const findansCity = () => {
-    let searchCity = document.getElementById(`searchCity`).value;
+const findcity = () => {
+    
+    let city = document.getElementById(`city`).value;
 
-    let filterCity = record.filter((val, index) => {
-        return searchCity == val.CITY;
+    let filtercity = record.filter((value) => {
+        return value.CITY.includes(city);
     })
 
-    document.getElementById(`searchCity`).value = "";
-
     let tbl = "";
-    filterCity.map((val) => {
+    filtercity.map((val) => {
         tbl += `
                     <tr>
                         <td>${val.GRID}</td>
@@ -292,9 +291,39 @@ const findansCity = () => {
                         <td>${val.EXPERIENCE}</td>
                         <td>${val.GENDER}</td>
                     </tr>`
-        document.getElementById(`tableData`).innerHTML = tbl;
+       
     })
+
+    document.getElementById(`tableData`).innerHTML = tbl;
+
+
 }
+
+// const findansCity = () => {
+//     let searchCity = document.getElementById(`searchCity`).value;
+
+//     let filterCity = record.filter((val, index) => {
+//         return searchCity == val.CITY;
+//     })
+
+//     document.getElementById(`searchCity`).value = "";
+
+//     let tbl = "";
+//     filterCity.map((val) => {
+//         tbl += `
+//                     <tr>
+//                         <td>${val.GRID}</td>
+//                         <td>${val.NAME}</td>
+//                         <td>${val.SURNAME}</td>
+//                         <td>${val.CITY}</td>
+//                         <td>${val.DESIGNATION}</td>
+//                         <td>${val.SALARY}</td>
+//                         <td>${val.EXPERIENCE}</td>
+//                         <td>${val.GENDER}</td>
+//                     </tr>`
+//         document.getElementById(`tableData`).innerHTML = tbl;
+//     })
+// }
 
 const findansDesignation = () => {
     let designation = document.getElementById(`searchDesignation`).value;

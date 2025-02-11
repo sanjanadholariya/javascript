@@ -14,10 +14,12 @@
   <div>
     <table align="center" class="  border-2">
 
-
-
       <tr>
-        <td width="135">
+        <td><input type="text" id="city" onkeyup="findcity()" placeholder="Enter city"></td>
+      </tr>
+
+       <tr>
+        <!-- <td width="135">
           <select name="" id="searchCity" onchange="findansCity() ">
             <option value="">----City----</option>
             <option value="surat">surat</option>
@@ -40,7 +42,7 @@
             <option value="ranchi">ranchi</option>
             <option value="dehradun">dehradun</option>
           </select>
-        </td>
+        </td> -->
 
         <td>
           <select name="" id="searchDesignation" onchange="findansDesignation()">
@@ -61,13 +63,8 @@
         </td>
 
         <td><input type="button" value="Reset All" onclick="allRecord()" /></td>
-      </tr>
+      </tr> 
       <tr>
-
-
-
-
-
         <td><label for="" class="fw-bold">Salary :- </label></td>
 
         <td>
