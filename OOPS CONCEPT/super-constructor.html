@@ -1,0 +1,36 @@
+<script type="text/javascript">
+
+    class A{
+        constructor(a,b){
+            this.a = a;
+            this.b = b;
+        }
+
+        sum(){
+            console.log(`sum :- ${this.a + this.b}`);
+            
+        }
+    }
+
+    class B extends A{
+        constructor(a,b,id,name){
+            super(a,b);
+            this.id = id;
+            this.name = name;
+        }
+
+        calc(){
+            this.sum();
+            console.log(`sub :- ${this.a - this.b}`);
+            console.log(`Name :- ${this.name}  ID :- ${this.id}`);
+            
+            
+            
+        }
+    }
+
+    let obj = new B(10,17,15,"sanjana");
+
+    obj.calc();
+
+</script>

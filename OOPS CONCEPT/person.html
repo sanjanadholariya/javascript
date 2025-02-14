@@ -1,0 +1,30 @@
+<script>
+    class person {
+        constructor(name, age, ctr) {
+            this.name = name;
+            this.age = age;
+            this.country = ctr;
+        }
+        details() {
+            console.log(`Name :- ${this.name}`);
+            console.log(`Age :- ${this.age}`);
+            console.log(`Country :- ${this.country}`);
+        }
+    }
+
+    let p1 = new person("Sanjana", 19, "India");
+    let p2 = new person("Prince", 17, "US")
+    let p3 = new person("Shraddha", 23, "Australia")
+
+    let personArr = [p1, p2, p3];
+    let count = 1;
+
+    personArr.map((val) => {
+        console.log(`%c-: Person ${count} details :-`,`font-weight : bold ;`);
+        val.details();
+        count++;
+        console.log(`\n\n`);
+        
+    })
+
+</script>
