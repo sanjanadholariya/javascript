@@ -1,0 +1,35 @@
+<script type="text/javascript">
+
+    // when we use normal class-object formate in that case, a variable of one function we can not use it in another function of the same class yet.
+
+    // But using the constructor we can use a one variable in whole class.
+
+    // We can create only one constructor in one class
+
+    // we can create variable in constructor using  'this.'  keyword  // EX:-   this.a  =  10;
+
+    // Constructor create variable for global scop
+
+    class calc{
+
+        constructor(a,b){   // calc(10,20) :- this 10 and 20 stor in a and b
+            this.a = a;     // We can use this a nd b variable in whole class.
+            this.b = b;
+        }
+
+        sum(){
+            console.log(`Sum of a and b is ${this.a + this.b}`);
+            
+        }
+
+    }
+
+    let obj = new calc(10,20);  // this argument stor in constructor parameter
+
+    obj.sum();
+
+    
+
+
+
+</script>

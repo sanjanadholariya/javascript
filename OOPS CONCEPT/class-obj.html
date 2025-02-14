@@ -1,0 +1,32 @@
+<script type="text/javascript">
+  class demo {
+    name() {
+      console.log("my name is sanjana dholariya.");
+    }
+
+    hobby() {
+      console.log("my hobby is learning something new everyday and cooking.");
+    }
+  }
+
+  let demoObject = new demo(); // we put demo class in the separate object through ** new ** keyword
+
+  demoObject.name(); // we call that name function/method
+  demoObject.hobby(); // we call that hobby function/method  through demoObject
+
+  // -----------------------------------------------------------------------------------------------------
+
+  // In the class we create function which is like normal function so we can use like parameters and argument in it.
+
+  // Example :-
+
+  class demo2 {
+    name(a) {
+      console.log(`My name is ${a}`); // here Name variable print sanjana
+    }
+  }
+
+  let d = new demo2();
+
+  d.name("sanjana."); // here we send "sanjana" as argument to the name function.
+</script>
