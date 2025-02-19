@@ -1,0 +1,37 @@
+body{
+    background-color: burlywood;
+}
+
+.box{
+    background-color: black;
+    width:500px;
+    height: 220px;
+    margin: 100px auto;
+    padding: 20px;
+}
+.box h1,h2{
+    color: white;
+    text-align: center;
+}
+
+#edit{
+    display: flex;
+    justify-content: center;
+    padding: 5px 20px;
+}
+#edit button{
+    margin: 0 10px 10px;
+    padding: 5px 30px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 20px;
+}
+
+#reset{
+    display: block;
+    margin: 0 auto;
+    padding: 5px 20px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 20px;
+}
