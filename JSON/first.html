@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+
+    // JSON :- JavaScript Object Notation
+
+    let data = {
+        name : "sanjana",
+        surname : "dholariya",          //This is the normal object of js
+        food : "paniputi"
+    }
+
+    let jsondata = JSON.stringify(data);    // TO convert normal object into json
+    console.log(jsondata);                  // we use JSON.stringify(object_name);
+    
+
+
+    let normalObj = JSON.parse(jsondata);   // use for convert json data into normal js object
+    console.log(normalObj);
+
+
+    // .parse :- to take a valid string.
+
+
+    
+    // JSON :- 
+            // in json all things like key and value are written in string only.
+
+    // let jsonNewdata={
+    //     "name":"sanjana",
+    //     "surname":"dholariya",
+    // }
+
+
+
+    // for set the json data in local storage:-
+
+    localStorage.setItem('set',JSON.stringify(data));
+    //                  ('keyname',JSON.stringify(object_name))   
+
+
+
+
+    // for get the  **original**  json data (string) from local storage :
+    
+    let data2 = localStorage.getItem('set');
+    console.log(data2);
+
+
+    // to get the json data in normal  ***(object_form)***  from local storage:-  use :: JSON.parse:
+
+    let data3 = JSON.parse(localStorage.getItem('set'));
+    console.log(data3);
+    
+    
+
+
+</script>
+</html>
