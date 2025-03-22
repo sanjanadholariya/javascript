@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Info App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1c1c1c;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+    h2 {
+      color: #ff4757;
+    }
+    input, button {
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      width: 90%;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+    input {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    input::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+    button {
+      background-color: #1e90ff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #007bff;
+    }
+    .movie-info img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+    .movie-info {
+      text-align: left;
+    }
+    .movie-info p {
+      margin: 6px 0;
+      font-size: 16px;
+    }
+    .highlight {
+      font-weight: bold;
+      color: #1e90ff;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Movie Info</h2>
+  <input type="text" placeholder="Enter movie name..." />
+  <button>Get Movie Info</button>
+  
+  <div class="movie-info">
+    <img src="https://via.placeholder.com/300x400" alt="Movie Poster" />
+    <p>🎬 Title: <span class="highlight">Movie Title</span></p>
+    <p>📅 Year: <span class="highlight">2025</span></p>
+    <p>⭐ IMDB Rating: <span class="highlight">8.5</span></p>
+    <p>🎭 Genre: <span class="highlight">Action, Drama</span></p>
+    <p>🎬 Director: <span class="highlight">John Doe</span></p>
+    <p>👥 Actors: <span class="highlight">Actor 1, Actor 2</span></p>
+    <p>📝 Plot: <span class="highlight">This is a sample plot of the movie.</span></p>
+  </div>
+</div>
+
+</body>
+</html>
