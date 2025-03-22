@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COVID-19 Data</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('./coronavirus-infection-background-with-copy-space.jpg') no-repeat center center/cover;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background-color: rgba(0, 0, 0, 0.5); /* Dark blue shade with transparency */
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+      backdrop-filter: blur(10px); /* Glassmorphism effect */
+    }
+    h2 {
+      color: #ff6b6b;
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+    p {
+      margin: 8px 0;
+      font-size: 18px;
+      color: #f1f1f1;
+    }
+    .highlight {
+      font-weight: bold;
+      color: #1e90ff;
+    }
+    input, button {
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      width: 90%;
+      box-sizing: border-box;
+      outline: none;
+    }
+    input {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    input::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+    button {
+      background-color: #1e90ff;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #007bff;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>COVID-19 Stats</h2>
+  <input type="text" id="country" placeholder="Enter country (e.g., India)" />
+  <button onclick="getCovidData()">Get Data</button>
+  
+  <div id="data"></div>
+</div>
+
+<script>
+  function getCovidData() {
+    const country = document.getElementById('country').value || 'india';
+    const url = `https://disease.sh/v3/covid-19/countries/${country}`;
+
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('data').innerHTML = `
+          <p>🌍 Country: <span class="highlight">${data.country}</span></p>
+          <p>🦠 Total Cases: <span class="highlight">${data.cases.toLocaleString()}</span></p>
+          <p>⚠️ Active Cases: <span class="highlight">${data.active.toLocaleString()}</span></p>
+          <p>💀 Deaths: <span class="highlight">${data.deaths.toLocaleString()}</span></p>
+          <p>💪 Recovered: <span class="highlight">${data.recovered.toLocaleString()}</span></p>
+          <p>🚨 Critical Cases: <span class="highlight">${data.critical.toLocaleString()}</span></p>
+          <p>🧪 Total Tests: <span class="highlight">${data.tests.toLocaleString()}</span></p>
+        `;
+      })
+      
+  }
+
+ 
+  getCovidData();
+</script>
+
+</body>
+</html>
